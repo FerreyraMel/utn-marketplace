@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Producto de UTN Marketplace</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="grid-layout-productos">
+
+
+    <div class="c1-encabezado">
+      <div class="encabezado-izq">
+        <a href="index.html"><img src="img/logo.png" alt="Logo UTN Marketplace" id="logo"></a>
+      </div>
+      <div class="encabezado-centro">
+        <form action="#" method="get">
+          <input type="search" id="search" placeholder="Escribe lo que quieres buscar...">
+          <button type="submit" id="boton-buscar">Buscar</button>
+        </form>
+      </div>
+      <div class="encabezado-der">
+        <img src="img/corazon.png" alt="Favoritos" class="iconos-menu">
+        <img src="img/cart.png" alt="Carrito" class="iconos-menu">
+        <img src="img/bell.png" alt="Notificaciones" class="iconos-menu">
+      </div>
+    </div>
+
+    <div class="ficha-producto">
+      <div class="c1-foto-producto">
+        <img src="img/notebook-asus.jpg" alt="Notebook Asus" class="imagen-producto">
+      </div>
+
+      <div class="c2-nombreyprecio-producto">
+        <h2 class="nombre-producto-ficha">Notebook Asus S510u</h2>
+        <p class="precio-tachado"><del>$160.000</del></p>
+        <p class="precio"><b>$150.000</b></p>
+        <p class="estrellas-calificacion">★★★★★</p>
+        <p class="color-azul">3º en Notebooks</p>
+        <p class="back-azul">3 cuotas sin interés</p>
+        <span class="back-naranja">Más vendido</span>
+
+        
+      </div>
+
+      
+      <div class="c3-compra-producto">
+               <img src="img/delivery.png" alt="Delivery" class="iconos-envio">
+        <p class="datos-envio">Llega gratis el lunes</p>
+        <img src="img/market.png" alt="Market" class="iconos-envio">
+        <p class="datos-envio">Retirá gratis el viernes 31 de marzo en correo</p>
+        <p><b>Stock disponible</b></p>
+        <p>Vendido por: UTN Marketplace | +5mil ventas</p>
+        <p>Cantidad: 1 unidad <small class="texto-disponibilidad">(76 disponibles)</small></p>
+        <button type="submit" class="boton-comprar">Comprar ahora</button>
+      </div>
+    </div>
+
+    
+
+    <div class="c2-descripcion-producto">
+      <hr><br>
+      <h3>Descripción:</h3>
+      <ul>
+        <li><b>Procesador:</b> Intel® Core™ i5-7200U (3M Cache, 3.10 GHz)</li>
+        <li><b>Memoria Ram:</b> 8 GB DDR4 2400MHz SDRAM</li>
+        <li><b>Disco Rígido:</b> 1TB 5400RPM SATA HDD</li>
+        <li><b>Pantalla:</b> 15.6" (16:9) LED backlit FHD (1920x1080) 60Hz Anti-Glare Panel with 45% NTSC
+        <li><b>Tarjeta de video:</b> Intel® HD Graphics 620</li>
+        <li><b>Conectividad de red:</b> Wi-Fi, Integrated 802.11 AC (2x2), Bluetooth y Built-in Bluetooth V4.2</li>
+        <li><b>Bateria:</b> Batería 3 Celdas 42 Whrs</li>
+        <li><b>Adaptador de corriente:</b> Salida: 19 V DC, 2.47 A, 45 W / Plug Type :ø4 (mm) - Entrada: 100 -240 V
+          AC,
+          50/60 Hz universal</li>
+        <li><b>Peso:</b> 1.5 kg ~ 1.7 kg with Battery</li>
+        <li><b>Dimensiones:</b> 361.4 x 243.5 x 17.9 mm (WxDxH)</li>
+        <b>Fabricante:</b> <a href="https://www.asus.com" target="_blank" rel="noopener noreferrer">Asus</a>
+      </ul>
+    </div>
+
+    <div class="c4-comentarios-producto">
+      <h3>Comentarios de los usuarios:</h3>
+      <p>Nombre 1 | <b class="estrellas-calificacion">★★★★★</b></p>
+      <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed dolor eget enim feugiat ultrices et
+          at
+          risus. Nulla facilisi. Cras mollis, justo eget pharetra dapibus, justo lectus sollicitudin massa.</i></p>
+      <br>
+      <p>Nombre 2 | <b class="estrellas-calificacion">★★★☆☆</b></p>
+      <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed dolor eget enim feugiat ultrices et
+          at
+          risus. Nulla facilisi. Cras mollis, justo eget pharetra dapibus, justo lectus sollicitudin massa.</i></p>
+
+      <br>
+      <form action="#">
+        <h3>Ingresa tu puntuación y comentario:</h3>
+        <div class="estrellas-grid">
+          <label for="1estrella">
+            <input id="1estrella" type="radio" value="1estrella" name="estrellas">★
+          </label>
+          <label for="2estrella">
+            <input id="2estrella" type="radio" value="2estrella" name="estrellas">★★
+          </label>
+          <label for="3estrella">
+            <input id="3estrella" type="radio" value="3estrella" name="estrellas">★★★
+          </label>
+          <label for="4estrella">
+            <input id="4estrella" type="radio" value="4estrella" name="estrellas">★★★★
+          </label>
+          <label for="5estrella">
+            <input id="5estrella" type="radio" value="5estrella" name="estrellas" checked>★★★★★
+          </label>
+        </div>
+
+        <div class="enviar-comentario">
+          <input type="text" placeholder="Escribe aquí tu nombre" id="nombre-comentario" required>
+          <input type="text" placeholder="Escribe aquí tu comentario" id="comentario" required>
+          <button type="submit" id="boton-enviar">Enviar</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="c6-footer">
+      <footer>UTN Marketplace ® | Todos los derechos reservados</footer>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

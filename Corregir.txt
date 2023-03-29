@@ -1,0 +1,13 @@
+Hacer un grid-layout para el index y otro para las ficha producto
+Poner más productos en index
+probar poner slider
+
+index-producto1
+index-producto2
+index-producto3
+index-producto4...
+
+ficha-producto
+ficha-descripcion
+ficha-compra
+ficha-comentarios

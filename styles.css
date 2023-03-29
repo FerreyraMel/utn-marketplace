@@ -1,0 +1,356 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  margin: 0;
+}
+
+.grid-layout-index {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "encabezado encabezado encabezado"
+    "producto producto producto"
+    "producto producto producto"
+}
+
+.grid-layout-productos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "encabezado encabezado encabezado"
+    "ficha ficha ficha"
+    "descripcion descripcion descripcion"
+    "comentarios comentarios comentarios"
+    "footer footer footer";
+}
+
+.c1-encabezado {
+  grid-area: encabezado;
+  background-color: #0C3E64;
+  display: grid;
+  grid-template-columns: 20% 65% 15%;
+  padding: 20px 0 20px 0;
+  width: 100%;
+  margin: 0;
+}
+
+.encabezado-izq {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  padding: 0 0 0 3%;
+  align-self: center;
+  justify-self: center;
+}
+
+.encabezado-centro {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  align-self: center;
+  justify-self: center;
+}
+
+.encabezado-der {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  align-self: center;
+  color: #FFF;
+}
+
+.iconos-menu {
+  height: 25px;
+  align-self: center;
+}
+
+#logo {
+  height: 70px;
+}
+
+#search {
+  width: 450px;
+  height: 35px;
+  margin: 10px;
+}
+
+input[type="search"]:focus {
+  outline: 2px solid #20B0DD;
+}
+
+input[type="search"] {
+  border-radius: 6px;
+  border: none;
+  padding: 5px;
+}
+
+#boton-buscar {
+  height: 37px;
+  width: 100px;
+  background-color: #20B0DD;
+  color: #FFF;
+  border-radius: 8px;
+  border: none;
+  /*para quitar el biselado que tiene el botón por defecto*/
+}
+
+.c2-productos {
+  grid-area: producto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.producto1 {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  text-align: center;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.producto2 {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+  text-align: center;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.producto3 {
+  grid-row: 1 / 2;
+  grid-column: 3 / 4;
+  text-align: center;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.producto4 {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  text-align: center;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.producto5 {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  text-align: center;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.producto6 {
+  grid-row: 2 / 3;
+  grid-column: 3 / 4;
+  text-align: center;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.c6-footer {
+  grid-area: footer;
+  background-color: #0C3E64;
+  color: #FFF;
+  font-size: 13px;
+  width: 100%;
+  padding: 25px 0 25px 0;
+  text-align: center;
+}
+
+.precio {
+  font-weight: 700;
+  font-size: 30px;
+  margin: 0;
+}
+
+.precio-tachado {
+  font-weight: 300;
+  font-size: 20px;
+  margin: 0;
+  color: #aaaaaa;
+}
+
+.back-azul {
+  display: inline-block;
+  background-color: #20B0DD;
+  padding: 5px;
+  color: #FFF;
+  border-radius: 7px;
+}
+
+.nombre-producto {
+  font-size: 20px;
+  font-weight: 500;
+  color: #20B0DD;
+  text-decoration: none;
+}
+
+.nombre-producto-ficha {
+  font-size: 30px;
+  font-weight: 500;
+  color: #20B0DD;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.estrellas-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  color: #20B0DD;
+}
+
+.enviar-comentario {
+  display: grid;
+  grid-template-areas:
+    "nombre comentario"
+    "boton-enviar boton-enviar";
+  grid-template-columns: 20% 80%;
+  grid-gap: 10px;
+  text-align: center;
+  margin: 20px;
+}
+
+#nombre-comentario {
+  grid-area: nombre;
+  border-radius: 6px;
+  padding: 5px;
+  border: 1px #e6e6e6;
+}
+
+#nombre-comentario:focus {
+  outline: 2px solid #20B0DD
+}
+
+#comentario {
+  grid-area: comentario;
+  border-radius: 6px;
+  padding: 5px;
+  border: 1px #e6e6e6;
+}
+
+#comentario:focus {
+  outline: 2px solid #20B0DD
+}
+
+#boton-enviar {
+  grid-area: boton-enviar;
+  justify-self: center;
+  align-self: center;
+  height: 37px;
+  width: 100px;
+  background-color: #20B0DD;
+  color: #FFF;
+  border-radius: 8px;
+  border: none;
+}
+
+.datos-envio {
+  color: #16d673;
+  font-weight: 500;
+  margin: 2px;
+}
+
+.texto-disponibilidad {
+  color: #aaaaaa !important;
+}
+
+.back-naranja {
+  display: inline-block;
+  background-color: #ff7733;
+  padding: 5px;
+  color: #FFF;
+  border-radius: 7px;
+}
+
+.color-azul {
+  color: #3483fa;
+  font-size: 14px;
+}
+
+.boton-comprar {
+  height: 50px;
+  width: 170px;
+  background-color: #3483fa;
+  color: #FFF;
+  border-radius: 8px;
+  border: none;
+  font-size: 18px;
+}
+
+.estrellas-calificacion {
+  color: #20B0DD !important;
+}
+
+.ficha-producto {
+  grid-area: ficha;
+  grid-template-columns: 50% 25% 25%;
+  grid-template-rows: auto;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 2%;
+}
+
+.c1-foto-producto {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  margin: 0 8% 0 0;
+}
+
+.c2-nombreyprecio-producto {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+}
+
+.c3-compra-producto {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  align-self: center;
+  justify-self: center;
+  text-align: left;
+  margin: 0 0 0 8%;
+  border: #e0e0e0 solid 1px;
+  border-radius: 8px;
+  padding: 2%;
+  text-align: center;
+}
+
+.c2-descripcion-producto {
+  grid-area: descripcion;
+  align-self: center;
+  justify-self: center;
+  width: 85%;
+  text-align: center;
+  padding: 2%;
+}
+
+.c4-comentarios-producto {
+  grid-area: comentarios;
+  align-self: center;
+  justify-self: center;
+  width: 100%;
+  background-color: #f7f7f7;
+  text-align: center;
+  padding: 2%;
+}
+
+hr {
+  border: #ecebeb solid 1px;
+}
